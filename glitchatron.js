@@ -114,17 +114,7 @@
 						glitchatron.img_width = img.width;
 						glitchatron.img_height = img.height;
 
-						if (glitchatron.img_width > glitchatron.img_height) {
-						  if (glitchatron.img_width > glitchatron.max_width) {
-						    glitchatron.img_height *= glitchatron.max_width / glitchatron.img_width;
-						    glitchatron.img_width = glitchatron.max_width;
-						  }
-						} else {
-						  if (glitchatron.img_height > glitchatron.max_height) {
-						    glitchatron.img_width *= glitchatron.max_height / glitchatron.img_height;
-						    glitchatron.img_height = glitchatron.max_height;
-						  }
-						}
+					
 
 						ctx.canvas.width = glitchatron.img_width;
 						ctx.canvas.height= glitchatron.img_height;
@@ -157,7 +147,7 @@
 			document.body.style.cursor = 'progress';
 
 			//Char Sets (these characters are found and changed around in the raw image data)
-			var chars1 = ["0",")","<",">",".","*","&","£","%","~","#","+","a","!","|","-"];
+			var chars1 = ["0",")","<",">",".","*","&","Â£","%","~","#","+","a","!","|","-"];
 			var chars2 = ["a","b","c","d","e","f","z","x","v","n","m","o","i","y","q","w"];
 
 			//Select one of the character sets to use
